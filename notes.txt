@@ -1,0 +1,40 @@
+src --> .java 
+build --> .class 
+
+webcontent/webapp -->
+			html audio v css js images **
+			
+WEB-INF/
+	web.xml [ configuration ] 
+			[ dd - deployment descriptor ] 
+			[ servlet configuration ] 	
+lib/
+	.jar 
+	
+MVC design 
+	model -> db .container[bean] 
+	view  -> user 
+	controller --> logic 
+
+src -> com 	
+		controller --> logic 
+		dao --> data access object --> db query --> insert update delete select 
+		bean --> storage container class --> temp data hold 
+		util --> 
+
+
+index.html 
+	Welcome to my site!! 
+
+how to create index.html ? 
+
+right click on webapp or webcontent -> click on new ->
+type html -> now type index.html -> finish 
+
+
+
+
+
+
+
+
