@@ -32,6 +32,20 @@ right click on webapp or webcontent -> click on new ->
 type html -> now type index.html -> finish 
 
 
+TASK : 
+
+	Login.html ==> Submit ==> LoginServlet => email password print 
+	index.html -> Add.html =>
+		No.1  [  ] 10
+		No.2  [  ] 20
+	
+			[submit] 
+		
+	AddServlet ==> XXX => 10 + 20 = 30 
+
+
+
+
 
 
 
