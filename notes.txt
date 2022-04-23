@@ -46,7 +46,12 @@ TASK :
 
 
 
+--------------------------------------------------
 
+1) add gender hobby city and singup.html
+2) add validation in addition.html [ required and format check ] 
+
+--------------------------------------------
 
 
 
