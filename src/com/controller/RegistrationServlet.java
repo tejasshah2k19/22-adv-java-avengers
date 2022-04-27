@@ -3,6 +3,7 @@ package com.controller;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -17,38 +18,38 @@ public class RegistrationServlet extends HttpServlet {
 		String email = request.getParameter("email");
 		String password = request.getParameter("password");
 
-		// validation
-		// required
-		// format
-		// length
-
-		// db insert
-		// home
-
 		boolean isError = false;
-		String errorMessage = "";
+
 		if (firstName == null || firstName.trim().length() == 0) {
 			isError = true;
-			errorMessage += "Please Enter FirstName<br>";
+			request.setAttribute("firstNameError", "Please Enter FirstName");
+		} else {
+			request.setAttribute("firstNameValue", firstName);
 		}
+
 		if (email == null || email.trim().length() == 0) {
 			isError = true;
-			errorMessage += "Please Enter Email<br>";
+			request.setAttribute("emailError", "Please Enter Email");
+		} else {
+			request.setAttribute("emailValue", email);
 		}
 
 		if (password == null || password.trim().length() == 0) {
 			isError = true;
-			errorMessage += "Please Enter Password<br>";
+			request.setAttribute("passwordError", "<font color='red'>Please Enter Password</font>");
+		} else {
+			request.setAttribute("passwordValue", password);
 		}
 
-		response.setContentType("text/html");
-		PrintWriter out = response.getWriter();
-		out.print("<html><body>");
 		if (isError == true) {
-			out.print(errorMessage);
+			// List list = new ArrayList();
+			RequestDispatcher rd = request.getRequestDispatcher("Registration.jsp");
+			rd.forward(request, response);
 		} else {
-			out.print("REgistraion done now you can Login");
+
+			RequestDispatcher rd = request.getRequestDispatcher("Home.jsp");
+			rd.forward(request, response);
+
 		}
-		out.print("</body></html>");
 	}
 }
