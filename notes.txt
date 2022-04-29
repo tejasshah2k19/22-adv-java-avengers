@@ -52,6 +52,24 @@ TASK :
 2) add validation in addition.html [ required and format check ] 
 
 --------------------------------------------
+open mysql commandline 
+input your password 
+
+one time -> create database 
+create database advjavaavengers; 
+
+user advjavaavengers; 
+
+create table users (
+	userId int primary key auto_increment, 
+	firstName varchar(30),
+	email  varchar(30),
+	password varchar(30)
+);
+
+----------------------------------
+
+
 
 
 
