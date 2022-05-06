@@ -19,6 +19,7 @@
 			<th>FirstName</th>
 			<th>Email</th>
 			<th>Password</th>
+			<th>Action</th>
 		</tr>
 
 		<%
@@ -29,6 +30,7 @@
 			<td><%=user.getFirstName()%></td>
 			<td><%=user.getEmail()%></td>
 			<td><%=user.getPassword()%></td>
+			<td><a href="DeleteUserServlet?userId=<%=user.getUserId()%>">Delete</a></td>
 		</tr>
 		<%
 			}

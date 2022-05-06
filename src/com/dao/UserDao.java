@@ -3,6 +3,7 @@ package com.dao;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.ArrayList;
 
 import com.bean.UserBean;
@@ -58,4 +59,30 @@ public class UserDao {
 		return users;
 	}
 
+	public boolean deleteUser(int userId) {
+		Connection con = null;
+		boolean flag = false;
+		PreparedStatement pstmt = null;
+
+		try {
+			con = DbConnection.getConnection();
+			pstmt = con.prepareStatement("delete from users where userId = ? ");
+			pstmt.setInt(1, userId);
+
+			int record = pstmt.executeUpdate();
+			if (record != 0) {
+				flag = true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+
+		return flag;
+	}
 }
