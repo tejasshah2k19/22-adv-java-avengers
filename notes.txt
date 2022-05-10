@@ -70,6 +70,42 @@ create table users (
 ----------------------------------
 
 
+which interface is used to hold connection of db?
+
+Connection con  =  XXX 
+
+
+______ResultSet____________ is used to store output of select * from users ? 
+
+
+
+__executeUpdate()_________ is used to execute insert query ?
+
+
+
+____ResultSet__________ is the return type of executeQuery? 
+
+
+___SqlException_________ exception thrown by JDBC api ?
+
+
+
+___int________ is the return type of executeUpdate?
+
+
+? is know as _____place holder___
+
+
+JIT ? just in time 
+class loader 
+why java is object oriented ?
+
+how ArrayList works internally ?
+how HashMap works internally ?
+
+What is HashTable and difference between HashTable and HashMap? 
+
+-----------------------------------------------------------------
 
 
 

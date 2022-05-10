@@ -85,4 +85,26 @@ public class UserDao {
 
 		return flag;
 	}
+
+	public UserBean getUserById(int userId) {
+
+		try (Connection con = DbConnection.getConnection();
+				PreparedStatement pstmt = con.prepareStatement("select * from users where userId = ? ");) {
+			pstmt.setInt(1, userId);
+			ResultSet rs = pstmt.executeQuery();
+			rs.next();
+			UserBean user = new UserBean();
+
+			user.setUserId(rs.getInt("userId"));
+			user.setFirstName(rs.getString("firstName"));
+			user.setEmail(rs.getString("email"));
+
+			return user; 
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+
+		return null;
+	}
+
 }
