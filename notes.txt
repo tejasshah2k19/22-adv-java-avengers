@@ -106,6 +106,36 @@ how HashMap works internally ?
 What is HashTable and difference between HashTable and HashMap? 
 
 -----------------------------------------------------------------
+expense manager :- 
+
+user signup 
+user login 
+user expense manage 
+	- add expense
+	- list expense 
+	- delete expense 
+	- modify expense 
+user signup
+	firstname email password gender 	
+
+-----------------------------------------------------------------
+
+
+
+adv java -- tomcat -- link -- eclipse 
+
+dynamic web project -- folder structure
+
+servlet-api.jar --> external jar 
+
+jsp -> input -> servlet --> validation -> response 
+
+
+
+
+
+
+
 
 
 

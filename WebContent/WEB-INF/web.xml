@@ -49,22 +49,34 @@
 		<servlet-name>ListUserServlet</servlet-name>
 		<servlet-class>com.controller.ListUserServlet</servlet-class>
 	</servlet>
-	
+
 	<servlet-mapping>
 		<servlet-name>ListUserServlet</servlet-name>
 		<url-pattern>/ListUserServlet</url-pattern>
 	</servlet-mapping>
 
 
+	<servlet>
+		<servlet-name>NameServlet</servlet-name>
+		<servlet-class>com.controller.NameServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>NameServlet</servlet-name>
+		<url-pattern>/NameServlet</url-pattern>
+	</servlet-mapping>
 
 
 
+	<filter>
+		<filter-name>CalculateAgeFilter</filter-name>
+		<filter-class>com.filter.CalculateAgeFilter</filter-class>
+	</filter>
 
-
-
-
-
-
+	<filter-mapping>
+		<filter-name>CalculateAgeFilter</filter-name>
+		<url-pattern>/CalculateAgeServlet</url-pattern>
+	</filter-mapping>
 
 
 
