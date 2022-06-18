@@ -79,7 +79,9 @@
 	</filter-mapping>
 
 
-
+	<listener>
+		<listener-class>com.listener.ServerListener</listener-class>
+	</listener>
 
 
 
