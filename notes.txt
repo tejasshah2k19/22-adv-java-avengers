@@ -184,8 +184,32 @@ listener
 1) implements ListenerXXXX
 2) override method 
 3) web.xml 
-		
-		
+--------------------------------------------------------
+welcome Tejas 
+
+to store the data for user
+ 2 storages 
+
+1) cookie -- client side -- browser 
+2) session -- server side -- server 
+
+
+session => creditCard otp cvv 	
+cookie  => name , address , 	
+
+
+session is a storage which use server's memory 
+cookie is also a storage in which we can store user's info 
+and it use browser's memory. 
+
+duration ? cookie session ? 
+when destroy ?? 
+
+cookie --> 1 year --> ?  
+session --> server shut down 
+
+facebook --> infinite ---> logout --> session time out 
+-------------------------------------------------------		
 		
 		
 		
