@@ -16,20 +16,19 @@ public class SaveUserDataServlet extends HttpServlet {
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
-	
+
 		String firstName = request.getParameter("firstName");
 		String cc = request.getParameter("cc");
-		
-		//cookie 
+
+		// cookie
 		Cookie c = new Cookie("firstName", firstName);
 		response.addCookie(c);
-		
-		
-		//session 
-		HttpSession session = request.getSession(); 
-		session.setAttribute("cc", cc);
-		
 
+		// session
+		HttpSession session = request.getSession();
+		session.setAttribute("cc", cc);
+
+		session.setMaxInactiveInterval(60 * 3);//3 minute
 		response.sendRedirect("UserDataDisplay.jsp");
 	}
 }
