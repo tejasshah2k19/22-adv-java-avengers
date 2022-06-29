@@ -210,12 +210,70 @@ session --> server shut down
 
 facebook --> infinite ---> logout --> session time out 
 -------------------------------------------------------		
+Header.jsp 
+	logo / title 
+	
+Footer.jsp 
+	Contact US 
+			
+		
+Product List 
+Order List 
+		
+		1) static  <%@include %>  <%@ directive 
+		2) dynamic <jsp:include>  
+		
+		
+	Header.jsp 50kb 
+	
+	inclusion.jsp 100kb 
+		Header.jsp 50kb 
+		
+		
+	inclusion.jsp 100kb 
+		goto Header.jsp and append output 
+		
+		
+		jsp --> 
+		Hi 
+			static inclusion <%@ header.jsp %> 
+		bye
+		
+		
+		
+		jsp --> 
+		Hi 
+			copy all the code of herader.jsp here  
+		bye  
+		
+		
+		
+		
+		jsp --> 
+		Hi 
+			dynamic inclusion  <jsp:include header.jsp   
+		bye
+		
+		jsp --> 
+		Hi 
+			goto header.jsp o/p append 
+		bye
+		
+--------------------------------------------------
+webapp --> 1.jsp 2.jsp 3.jsp 
+			admin 
+			1 
+			Login.jsp email/password --> controller 
+			singup? db? 				
+			
+			ans: ServletConfig --> web.xml 	
+--------------------------------------------------
 		
 		
 		
 		
 		
-		
+		 
 		
 		
 		
