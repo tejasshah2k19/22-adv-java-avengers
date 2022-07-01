@@ -268,9 +268,31 @@ webapp --> 1.jsp 2.jsp 3.jsp
 			
 			ans: ServletConfig --> web.xml 	
 --------------------------------------------------
+jstl -> 
+	java standard tab library 
+	
+	<a> 
+	<b>
+	<i>
+			
+			
+			
+	<out> 		
+	<if>
+	<case>
 		
-		
-		
+	lib -> jstl.jar 
+tag -> customtag --> jstl  
+
+1) jar
+2) jsp -> import --> taglib uri 
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+	<c:if>
+	
+	jstl-> core ,fmt , xml ,sql, function 
+	
+
+
 		
 		
 		 
