@@ -291,8 +291,15 @@ tag -> customtag --> jstl
 	
 	jstl-> core ,fmt , xml ,sql, function 
 	
+-------------------------------------------------
+1) function -- logic -- class 
+2) .tld   greet 
+3) web.xml 
+4) jsp --> import --> taglib 
 
 
+
+-------------------------------------------------
 		
 		
 		 
