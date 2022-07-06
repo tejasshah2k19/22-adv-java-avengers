@@ -300,6 +300,28 @@ tag -> customtag --> jstl
 
 
 -------------------------------------------------
+		user define tag -- customtag -- jsp-api.jar 
+		
+		1)	simple tag
+		2)  classic tag 
+		
+simple tag
+	1) class - tag handler class 
+	2) .tld 
+	3) .xml 
+	4) jsp use - taglib 
+	
+	${c:greet} 
+	<c:greet></c:greet>
+	<c:sum n1="2" n2="3"/>
+	 
+	
+	
+	
+
+
+
+
 		
 		
 		 
