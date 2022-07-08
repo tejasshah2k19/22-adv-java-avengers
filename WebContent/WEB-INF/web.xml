@@ -99,6 +99,12 @@
 			<taglib-uri>www.royal.com/avengers/stag</taglib-uri>
 			<taglib-location>/WEB-INF/stag.tld</taglib-location>
 		</taglib>
+		
+		
+		<taglib>
+			<taglib-uri>www.royal.com/avengers/ctag</taglib-uri>
+			<taglib-location>/WEB-INF/ctag.tld</taglib-location>
+		</taglib>
 	</jsp-config>
 
 

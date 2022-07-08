@@ -9,5 +9,10 @@
 </head>
 <body>
 	<s:greet />
+	<br>
+	<s:sum n1="12" n2="20" />
+	<br>
+	<s:sum n1="10" n2="20" />
+
 </body>
 </html>
