@@ -11,5 +11,7 @@
 	
 	hey....<p>hi</p>
 	<h2>Royal</h2>
+	
+	<c:print count="13">Avengers</c:print>
 </body>
 </html>

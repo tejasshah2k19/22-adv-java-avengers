@@ -15,5 +15,15 @@
 		</attribute>
 	</tag>
 
+	<tag>
+		<name>print</name>
+		<tag-class>com.ctag.PrintTag</tag-class>
+		<attribute>
+			<name>count</name>
+			<rtexprvalue>true</rtexprvalue>
+		</attribute>
+		<body-content>JSP</body-content>
+	</tag>
+
 
 </taglib>
